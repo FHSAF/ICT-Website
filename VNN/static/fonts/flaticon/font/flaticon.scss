@@ -1,0 +1,137 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?01ad10cb186295fa8bc853598d5c5a6b") format("truetype"),
+url("./flaticon.woff?01ad10cb186295fa8bc853598d5c5a6b") format("woff"),
+url("./flaticon.woff2?01ad10cb186295fa8bc853598d5c5a6b") format("woff2"),
+url("./flaticon.eot?01ad10cb186295fa8bc853598d5c5a6b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?01ad10cb186295fa8bc853598d5c5a6b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "access": "\f101",
+    "add-user": "\f102",
+    "antenna-1": "\f103",
+    "antenna-2": "\f104",
+    "antenna": "\f105",
+    "big-data-1": "\f106",
+    "big-data": "\f107",
+    "cctv": "\f108",
+    "computer": "\f109",
+    "development": "\f10a",
+    "engineering": "\f10b",
+    "enter": "\f10c",
+    "house": "\f10d",
+    "internet-of-things": "\f10e",
+    "internet": "\f10f",
+    "lock": "\f110",
+    "network": "\f111",
+    "router": "\f112",
+    "satellite": "\f113",
+    "security-system": "\f114",
+    "seo": "\f115",
+    "server": "\f116",
+    "setting": "\f117",
+    "system": "\f118",
+    "technology": "\f119",
+    "wifi-signal": "\f11a",
+    "wifi": "\f11b",
+    "world-grid": "\f11c",
+);
+
+.flaticon-access:before {
+    content: map-get($flaticon-map, "access");
+}
+.flaticon-add-user:before {
+    content: map-get($flaticon-map, "add-user");
+}
+.flaticon-antenna-1:before {
+    content: map-get($flaticon-map, "antenna-1");
+}
+.flaticon-antenna-2:before {
+    content: map-get($flaticon-map, "antenna-2");
+}
+.flaticon-antenna:before {
+    content: map-get($flaticon-map, "antenna");
+}
+.flaticon-big-data-1:before {
+    content: map-get($flaticon-map, "big-data-1");
+}
+.flaticon-big-data:before {
+    content: map-get($flaticon-map, "big-data");
+}
+.flaticon-cctv:before {
+    content: map-get($flaticon-map, "cctv");
+}
+.flaticon-computer:before {
+    content: map-get($flaticon-map, "computer");
+}
+.flaticon-development:before {
+    content: map-get($flaticon-map, "development");
+}
+.flaticon-engineering:before {
+    content: map-get($flaticon-map, "engineering");
+}
+.flaticon-enter:before {
+    content: map-get($flaticon-map, "enter");
+}
+.flaticon-house:before {
+    content: map-get($flaticon-map, "house");
+}
+.flaticon-internet-of-things:before {
+    content: map-get($flaticon-map, "internet-of-things");
+}
+.flaticon-internet:before {
+    content: map-get($flaticon-map, "internet");
+}
+.flaticon-lock:before {
+    content: map-get($flaticon-map, "lock");
+}
+.flaticon-network:before {
+    content: map-get($flaticon-map, "network");
+}
+.flaticon-router:before {
+    content: map-get($flaticon-map, "router");
+}
+.flaticon-satellite:before {
+    content: map-get($flaticon-map, "satellite");
+}
+.flaticon-security-system:before {
+    content: map-get($flaticon-map, "security-system");
+}
+.flaticon-seo:before {
+    content: map-get($flaticon-map, "seo");
+}
+.flaticon-server:before {
+    content: map-get($flaticon-map, "server");
+}
+.flaticon-setting:before {
+    content: map-get($flaticon-map, "setting");
+}
+.flaticon-system:before {
+    content: map-get($flaticon-map, "system");
+}
+.flaticon-technology:before {
+    content: map-get($flaticon-map, "technology");
+}
+.flaticon-wifi-signal:before {
+    content: map-get($flaticon-map, "wifi-signal");
+}
+.flaticon-wifi:before {
+    content: map-get($flaticon-map, "wifi");
+}
+.flaticon-world-grid:before {
+    content: map-get($flaticon-map, "world-grid");
+}

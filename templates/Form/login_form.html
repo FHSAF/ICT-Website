@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %} | login {% endblock %}
+{% block content %}
+<section class="main-section margin-top">
+        <div class="container">
+            <div class="log-in-form">
+					{% include 'partials/_alerts.html' %}
+        			<form class="contact100-form validate-form" action="{% url 'login' %}" method="POST">
+                        {% csrf_token %}
+        				<span class="contact100-form-title">
+        					Login
+        				</span>
+        				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+        					<span class="label-input100">Email</span>
+        					<input class="input100" type="text" name="email" placeholder="Enter your email addess">
+        					<span class="focus-input100"></span>
+        				</div>
+
+                        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+        					<span class="label-input100">Password</span>
+        					<input class="input100" type="password" name="password" placeholder="type your password here...">
+        					<span class="focus-input100"></span>
+        				</div>
+        				<input type="submit" name="Login" class="btn btn-primary btn-block">
+        			</form>
+                    <div class="row justify-content-center">
+                    <div class="col-md-7 ftco-animate text-center">
+						<p>don't have any account?</p>
+                        <p>register bellow</p>
+
+						<a href="{% url 'register' %}"><button class="btn btn-primary py-3 px-5" data-toggle="modal" data-target="#inquiryModal">Register</button></a>
+
+					</div>
+    		</div>
+            </div>
+    </div>
+</section>
+{% endblock %}

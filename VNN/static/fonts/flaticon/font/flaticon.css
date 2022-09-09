@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?01ad10cb186295fa8bc853598d5c5a6b") format("truetype"),
+url("./flaticon.woff?01ad10cb186295fa8bc853598d5c5a6b") format("woff"),
+url("./flaticon.woff2?01ad10cb186295fa8bc853598d5c5a6b") format("woff2"),
+url("./flaticon.eot?01ad10cb186295fa8bc853598d5c5a6b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?01ad10cb186295fa8bc853598d5c5a6b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-access:before {
+    content: "\f101";
+}
+.flaticon-add-user:before {
+    content: "\f102";
+}
+.flaticon-antenna-1:before {
+    content: "\f103";
+}
+.flaticon-antenna-2:before {
+    content: "\f104";
+}
+.flaticon-antenna:before {
+    content: "\f105";
+}
+.flaticon-big-data-1:before {
+    content: "\f106";
+}
+.flaticon-big-data:before {
+    content: "\f107";
+}
+.flaticon-cctv:before {
+    content: "\f108";
+}
+.flaticon-computer:before {
+    content: "\f109";
+}
+.flaticon-development:before {
+    content: "\f10a";
+}
+.flaticon-engineering:before {
+    content: "\f10b";
+}
+.flaticon-enter:before {
+    content: "\f10c";
+}
+.flaticon-house:before {
+    content: "\f10d";
+}
+.flaticon-internet-of-things:before {
+    content: "\f10e";
+}
+.flaticon-internet:before {
+    content: "\f10f";
+}
+.flaticon-lock:before {
+    content: "\f110";
+}
+.flaticon-network:before {
+    content: "\f111";
+}
+.flaticon-router:before {
+    content: "\f112";
+}
+.flaticon-satellite:before {
+    content: "\f113";
+}
+.flaticon-security-system:before {
+    content: "\f114";
+}
+.flaticon-seo:before {
+    content: "\f115";
+}
+.flaticon-server:before {
+    content: "\f116";
+}
+.flaticon-setting:before {
+    content: "\f117";
+}
+.flaticon-system:before {
+    content: "\f118";
+}
+.flaticon-technology:before {
+    content: "\f119";
+}
+.flaticon-wifi-signal:before {
+    content: "\f11a";
+}
+.flaticon-wifi:before {
+    content: "\f11b";
+}
+.flaticon-world-grid:before {
+    content: "\f11c";
+}

@@ -1,0 +1,36 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark vn_navbar vn-navbar-light site-navbar-target" id="vn-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" {% if '/' == request.path %} href="#home-section" {% else %} href="{% url 'index_view_url' %}" {% endif %}><img src="{% static 'images/vira_logo2021.png' %}"></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#vn-nav" aria-controls="vn-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="vn-nav">
+	        <ul class="navbar-nav nav ml-auto">
+			  {% if '/' == request.path %}
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blogs</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+
+			  {% else %}
+			  <li class="nav-item"><a href="{% url 'index_view_url' %}" class="nav-link"><button class="btn btn-primary"><i class="fa fa-arrow-left"></i></button></a>
+			  {% endif %}
+			  {% if user.is_authenticated %}
+			  	<li class="nav-item"><a href="javascript:{document.getElementById('logout').submit()}" class="nav-link"><button class="btn btn-primary">Logout</button></a>
+					<form action="{% url 'logout' %}" method="POST" id="logout">
+                       {% csrf_token %}
+                  	 <input type="hidden">
+                    </form>
+				</li>
+			  {% else %}
+			  <li class="nav-item"><a href="{% url 'login' %}" class="nav-link"><button class="btn btn-primary">Login</button></a>
+
+			  </li>
+			  {% endif %}
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %} | register {% endblock %}
+{% block content %}
+<section class="main-section margin-top">
+        <div class="container">
+            <div class="log-in-form">
+			{% include 'partials/_alerts.html' %}
+			<form class="contact100-form validate-form" action="{% url 'register' %}" method="POST">
+                {% csrf_token %}
+				<span class="contact100-form-title">
+					Register Yourself
+				</span>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Your Name</span>
+					<input class="input100" type="text" name="firstname" placeholder="Enter your name">
+					<span class="focus-input100"></span>
+				</div>
+
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="surename is required">
+					<span class="label-input100">Your Surename</span>
+					<input class="input100" type="text" name="surename" placeholder="Enter your surename">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" name="email" placeholder="Enter your email addess">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Phone Number is required">
+					<span class="label-input100">Phone Number</span>
+					<input class="input100" type="text" name="phone_number" placeholder="Enter your Phone Number">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Date of Birth is required">
+					<span class="label-input100">Date of Birth</span>
+					<input class="input100" type="date" name="birth_date" placeholder="Enter your date of birth">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Address is required">
+					<span class="label-input100">Address</span>
+					<input class="input100" name="address" placeholder="Your address here..."></input>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Password</span>
+					<input class="input100" type="password" name="password" placeholder="type your password here...">
+					<span class="focus-input100"></span>
+				</div>
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Confirm password</span>
+					<input class="input100" type="password" name="password2" placeholder="Please Confirm your password...">
+					<span class="focus-input100"></span>
+				</div>
+
+					<input type="submit" value="Register" class="btn btn-primary btn-block">
+			</form>
+        </div>
+    </div>
+</div>
+</section>
+{% endblock %}

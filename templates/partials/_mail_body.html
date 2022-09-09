@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Confirmation</title>
+</head>
+<body>
+<h1>Hi, dear {{ user.firstname }}!</h1><br>
+    <p> We just need to verify your email address before you can access your account! </p>
+    <h5>Please verify your email address by clicking on the button below:</h5> <a href="{{ link }}"><button>Verify</button></a>
+    <h2>The token expires on {{ expiry|time:"TIME_FORMAT" }}</h2>
+    <h5> Thanks! – Viranawawaran ISP Co. developers team. </h5>
+</body>
+</html>

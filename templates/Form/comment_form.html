@@ -1,0 +1,45 @@
+{% if user.is_authenticated %}
+<button class="contact100-btn-show" data-toggle="modal" data-target="#commentModal">
+    <i class="fa fa-comment aria-hidden="true"></i>
+</button>
+{% else %}
+<a href="{% url 'login' %}">
+<button class="contact100-btn-show">
+    <i class="fa fa-comment aria-hidden="true"></i>
+</button>
+</a>
+{% endif %}
+<div class="modal fade" id="commentModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+		<div class="wrap-contact100">
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+
+
+			<form class="contact100-form validate-form" action="{% url 'new_comment_url' blog.id %}" method="POST">
+                {% csrf_token %}
+                  {% if user.is_authenticated %}
+                  <input type="hidden" name="user_id" value="{{ user.id }}">
+                  {% else %}
+                  <input type="hidden" name="user_id" value="0">
+                  {% endif %}
+				<span class="contact100-form-title">
+					Leave a comment
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="label-input100">Message</span>
+					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<input type="submit" value="Send" class="contact100-form-btn">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
