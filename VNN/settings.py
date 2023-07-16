@@ -176,19 +176,19 @@ def verified_callback(user):
 
 
 EMAIL_VERIFIED_CALLBACK = verified_callback
-EMAIL_FROM_ADDRESS = 'admin_local@viranawawaran.af'
+EMAIL_FROM_ADDRESS = 'admin_local@mydomain.com'
 EMAIL_MAIL_SUBJECT = 'Confirm your email'
 EMAIL_MAIL_HTML = 'partials/_mail_body.html'
 EMAIL_MAIL_PLAIN = 'mail_body.txt'
 EMAIL_TOKEN_LIFE = 60 * 60
 EMAIL_PAGE_TEMPLATE = 'Form/login_form.html'
-EMAIL_PAGE_DOMAIN = 'https://viranawawaran.af'
+EMAIL_PAGE_DOMAIN = 'https://mydomain.com'
 
 # For Django Email Backend
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.viranawawaran.af'
+EMAIL_HOST = 'mail.mydomain.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'admin@viranawawaran.af'
+EMAIL_HOST_USER = 'admin@mydomain.com'
 EMAIL_HOST_PASSWORD = 'LLK@!@7712jdsi@@'  # '&hMY]4(j[;i@'
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
